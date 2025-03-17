@@ -33,7 +33,7 @@ def put(image):
     # image = cv2.imread(os.path.join(base, path), 1)
     image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     # 同态滤波器
-    h_image = homomorphic_filter(image, d0=10, r1=0.5, rh=2, c=4, h=2.0, l=0.5)
+    h_image = homomorphic_filter(image, d0=10, r1=0.2, rh=2, c=4, h=2.0, l=0.5)
     # plt.imshow(h_image, 'gray')
     # plt.axis('off')
     # # cv2.imwrite("../images/1-tongtai.jpg", h_image)
